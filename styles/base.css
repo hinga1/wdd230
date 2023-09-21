@@ -35,6 +35,10 @@ nav a{
     margin-bottom: 10px;
 }
 
+img {
+  border-radius: 20px;
+}
+
   h2 {
     text-align: center;
     border-bottom: 1px solid black;
