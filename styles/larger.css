@@ -1,0 +1,20 @@
+/* larger.css */
+/* Styles for screens wider than 768px (adjust breakpoint as needed) */
+@media (min-width: 768px) {
+    /* Example: Increase font size for larger screens */
+    body {
+        font-size: 18px;
+    }
+
+    /* Add more styles for larger views */
+
+    /* Add your media query styles here */
+    /* For example, you can change the navigation layout for larger screens */
+    nav ul {
+        flex-direction: row; /* Horizontal row for larger views */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}

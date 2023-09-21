@@ -1,0 +1,24 @@
+/* main.css (or your main CSS file) */
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Vertical column for mobile */
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+/* For larger views, override the flex-direction */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Horizontal row for larger views */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
