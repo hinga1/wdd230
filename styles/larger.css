@@ -11,6 +11,7 @@
     /* Add your media query styles here */
     /* For example, you can change the navigation layout for larger screens */
     nav ul {
+        text-align: center;
         flex-direction: row; /* Horizontal row for larger views */
     }
 
