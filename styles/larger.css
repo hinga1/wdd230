@@ -1,3 +1,6 @@
+nav ul {
+    justify-content: center;
+}
 /* larger.css */
 /* Styles for screens wider than 768px (adjust breakpoint as needed) */
 @media (min-width: 768px) {
@@ -16,6 +19,7 @@
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 0 20px;
+        font-size: 20px;
     }
 }
