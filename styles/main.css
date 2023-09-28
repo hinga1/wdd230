@@ -13,13 +13,102 @@ nav ul li {
     margin: 10px 0;
 }
 
+nav {
+    position: relative;
+}
+
+.mobile-menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    display: none; /* Hide by default for larger screens */
+}
+
 /* For larger views, override the flex-direction */
-@media (min-width: 768px) {
-    nav ul {
-        flex-direction: row; /* Horizontal row for larger views */
+/* Show the hamburger menu button only on screens with a max width of 768px (typical mobile view) */
+@media (max-width: 768px) {
+
+    #hamburger-menu {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: black;
+        display: block; 
     }
 
-    nav ul li {
-        margin: 0 10px;
+    .mobile-menu-button {
+        display: block;
     }
-}
+
+    
+    /* Navigation menu for mobile view */
+    nav ul {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none; /* Hide by default on mobile view */
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    /* Show the navigation menu on mobile when the hamburger menu is clicked */
+    #hamburger-menu.clicked + nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+  
+    /* Mobile-specific styles for navigation menu */
+    nav {
+        display: none; /* Hide the navigation menu by default on mobile */
+        position: fixed; /* Fixed position so it's always accessible */
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%; /* Adjust the width as needed */
+        background-color: #333; /* Background color for the mobile menu */
+        z-index: 2; /* Ensure it's above other content */
+    }
+  
+    nav ul {
+        padding: 0;
+        list-style: none;
+    }
+  
+    nav li {
+        margin: 10px 0;
+    }
+  
+    nav a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+  
+    /* Show the navigation menu when the hamburger menu button is clicked */
+    #hamburger-menu:checked + nav {
+        display: block;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .card {
+        margin-bottom: 20px; /* Add spacing between stacked sections */
+    }
+  }
+  

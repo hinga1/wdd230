@@ -4,22 +4,17 @@ nav ul {
 /* larger.css */
 /* Styles for screens wider than 768px (adjust breakpoint as needed) */
 @media (min-width: 768px) {
-    /* Example: Increase font size for larger screens */
-    body {
-        font-size: 18px;
-    }
-
-    /* Add more styles for larger views */
-
-    /* Add your media query styles here */
-    /* For example, you can change the navigation layout for larger screens */
     nav ul {
         text-align: center;
-        flex-direction: row; /* Horizontal row for larger views */
+        flex-direction: row;
     }
-
+    
     nav ul li {
         margin: 0 20px;
         font-size: 20px;
+    }
+
+    #hamburger-menu {
+        display: none;
     }
 }
