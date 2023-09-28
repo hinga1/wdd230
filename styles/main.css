@@ -33,13 +33,13 @@ nav {
 /* Show the hamburger menu button only on screens with a max width of 768px (typical mobile view) */
 @media (max-width: 768px) {
 
-    #hamburger-menu {
+    mobile-menu-button {
         background: none;
         border: none;
         font-size: 24px;
         cursor: pointer;
         color: black;
-        display: block; 
+        display: block;
     }
 
     .mobile-menu-button {
