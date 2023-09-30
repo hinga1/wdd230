@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Sofia+Sans:wght@300&display=swap');
+
+body {
+    font-family: sofia sans;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+header {
+    font-size: 5rem;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: moon dance;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: gray;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #999;
+}
+.colors td{
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: white;
+  }
+  .secondary {
+    background-color: blue;
+  }
+  .accent1 {
+    background-color: gray;
+  }
+  .accent2{
+    background-color: yellow;
+  }
+
+footer {
+    background-color: #0055b3;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.wireframe {
+    border: 2px dashed #333;
+    padding: 20px;
+    margin: 10px 0;
+}
