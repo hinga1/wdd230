@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busia Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Chamber of Commerce Site Plan">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Your Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="url-to-your-image.jpg">
+    <meta property="og:url" content="https://your-chamber-website.com">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="web master Logo" width="150px" height="150px">
+        </a>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <img id="hero-img" src="images/bitumen roads2.jpg" alt="Busia Town Aerial Photo" width="100%">
+        
+        
+            <section class="cta">
+                <button id="cta-button">Contact Us</button>
+
+        
+                <div id="contact-form-container" class="hidden">
+                    <div id="contact-form">
+                    <span class="close-button" id="close-button">&times;</span>
+                    <h2>Contact Us</h2>
+                    <form id="contact-form-content">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        
+        <div class="side-by-side">
+            <section class="event">
+                <h2>Events</h2>
+            <hr>
+                <div id="currentEvent">
+                </div>
+            </section>
+            
+            <section class="weather">
+                <div class="weather-card">
+                    <h2>Current Weather</h2>
+                <hr>
+                    <div class="weather-info">
+                        <div class="weather-icon">
+                            <img src="" alt="Weather Icon">
+                        </div>
+                        <div class="weather-details">
+                            <p><strong>Location:</strong> <span id="location">Busia, Kenya</span></p>
+                            <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                            <p><strong>Condition:</strong> <span id="condition"></span></p>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+        </div>
+
+        <section class="spotlights">
+            <div class="spotlight">
+                <img src="images/b011cb0d7d18314512c0b095002c3362.jpg" alt="Company 1 Logo" width="100px" height="100px">
+                <h3>Snobstar cyber cafe</h3>
+                <p> We offer our customers with high-speed internet access, other computer services like printing, and typing and variety of PC games.</p>
+                <a href="https://www.top-rated.online/cities/Busia/place/p/10240478/Snobstar+cyber+cafe">Learn More</a>
+            </div>
+            
+            <div class="spotlight">
+                <img src="images/ena.png" alt="Company 2 Logo" width="100px" height="100px">
+                <h3>Ena Coach</h3>
+                <p>We provide travel and percel delivery services across the country to the general public.</p>
+                <a href="http://www.enacoach.co.ke/">Learn More</a>
+            </div>
+            
+            <div class="spotlight">
+                <img src="images/oracom.png" alt="Company 3 Logo" width="100px" height="100px">
+                <h3>Oracom Web Design</h3>
+                <p>We Offer Web Design and Web Solutions in Busia County.</p>
+                <a href="https://www.oracom.co.ke/web-design-services-in-busia/">Learn More</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="logo-and-info">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="web master Logo" width="150px" height="150px">
+            </a>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="development-info">
+            <p>&copy; <span id="currentYear"></span> David Kamau Hinga, Kenya</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

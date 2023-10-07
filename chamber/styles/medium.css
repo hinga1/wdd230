@@ -1,0 +1,35 @@
+/* CSS for the hamburger menu toggle in tablet view */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show the toggle in tablet view */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: gray;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px;
+    }
+}

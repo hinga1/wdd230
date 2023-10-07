@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Sofia+Sans:wght@300&display=swap');
+
+body {
+    font-family: sofia sans;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: white;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: moon dance;
+    font-size: 50px;
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px;
+}
+
+.logo {
+    width: 150px; 
+    height: 150px; 
+    margin-right: 500px;
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+/* CSS for the CTA button */
+#cta-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* CSS for the contact form container and form */
+#contact-form-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#contact-form {
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style form fields */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add some spacing between form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style form validation messages */
+.validation-message {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+
+/* Additional styling for links or buttons within the form */
+#contact-form a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#contact-form a:hover {
+    background-color: #0056b3;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 100%;
+}
+
+#cta-button {
+    margin-top: 20px;
+}
+
+/* Create a flex container for side-by-side sections */
+.side-by-side {
+    display: flex;
+    justify-content: center;
+}
+
+.event {
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.weather {
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.spotlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.spotlight {
+    border: 2px solid black;
+    box-shadow: 0 1 3 1;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: gray;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.development-info {
+    text-align: right;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    flex: 1;
+}
+
+.development-info p {
+    margin: 0;
+}
+
+#currentYear, #lastModified {
+    font-weight: bold;
+    padding: 0 5px; /* Add some padding for separation */
+    border-right: 1px solid #fff; /* Add vertical stroke */
+    border-left: 1px solid #fff; /* Add vertical stroke */
+    display: inline-block; /* Make the elements inline-block to center them */
+    margin: 0 5px;
+}
+
+
+
+/* CSS for the hamburger menu toggle in mobile view */
+.menu-toggle {
+    display: none; /* Initially hide the toggle in desktop view */
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Vertically arrange sections */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.spotlights {
+    display: flex;
+    flex-direction: row; /* Use row layout for desktop view */
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style for the logo and information in the footer */
+.logo-and-info {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+    text-align: center; /* Center text horizontally */
+    gap: 10px; /* Add spacing between logo and nav links */
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px; /* Add spacing between logo and text in mobile view */
+}
+
+.development-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically in mobile view */
+    align-items: center; /* Center items horizontally in mobile view */
+    margin-top: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    color: yellow;
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show the toggle in mobile view */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: gray;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px;
+    }
+
+    .spotlights {
+        flex-direction: column; /* Switch to column layout for mobile view */
+        align-items: center; /* Center items horizontally in mobile view */
+    }
+
+    footer {
+        flex-direction: column; /* Stack elements vertically in mobile view */
+        align-items: center; /* Center items horizontally in mobile view */
+    }
+
+    .footer-nav {
+        text-align: center; /* Center the navigation links in mobile view */
+        margin-top: 10px; /* Add spacing between logo and nav links in mobile view */
+    }
+
+    .footer-nav ul {
+        margin: 0;
+    }
+
+    .footer-nav li {
+        margin: 5px 10px;
+    }
+}
