@@ -58,3 +58,15 @@ document.getElementById('cta-button').addEventListener('click', function () {
 document.getElementById('close-button').addEventListener('click', function () {
     document.getElementById('contact-form-container').style.display = 'none';
 });
+
+const darkModeToggle = document.getElementById("darkModeToggle");
+const body = document.body;
+
+darkModeToggle.addEventListener("change", () => {
+    if (darkModeToggle.checked) {
+        body.classList.add("dark-mode");
+    } else {
+        body.classList.remove("dark-mode");
+    }
+});
+
