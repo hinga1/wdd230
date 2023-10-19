@@ -56,6 +56,18 @@ img {
   border-radius: 20px;
 }
 
+.temple-name-container {
+  position: relative;
+}
+.temple-name {
+  position: absolute;
+  bottom: 300px; /* Adjust the top position as needed */
+  left: 90px; /* Adjust the left position as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent background */
+  padding: 5px; /* Add padding for better visibility */
+}
+
+
   h2 {
     text-align: center;
     border-bottom: 1px solid black;
