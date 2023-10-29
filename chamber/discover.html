@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busia Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta name="author" content="David Kamau Hinga">
+    <meta name="description" content="Chamber of Commerce Site Plan">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Busia Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Z7SttK88F1zJKTu69uHwvwo7dqLKTjqU_Q&usqp=CAU">
+    <meta property="og:url" content="https://hinga1.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="web master Logo"  loading="lazy" width="150px" height="150px">
+        </a>
+        <div>
+            <h1>Busia Town Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+
+    </header>
+    
+    <main class="discover-page">
+        <section class="sidebar">
+            <div class="weather-info1">
+                <div class="weather-icon1">
+                    <img src="" alt="Weather Icon">
+                </div>
+                <div class="weather-details1">
+                    <p><strong>Location:</strong> <span id="location">Busia, Kenya</span></p>
+                    <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                    <p><strong>Condition:</strong> <span id="condition"></span></p>
+                </div>
+                <p>Number of visits: <span id="visitCount"></span></p>
+            </div>
+            <section class="event1">
+                <h2>Events</h2>
+            <hr>
+                <div id="currentEvent">
+                </div>
+            </section>
+            <section class="attraction">
+                <h2>Attraction</h2>
+            <hr>
+                <div id="attractionArea">
+                    <h3>EL'MOLO CROCODILE PARK</h3>
+                    <h4>About</h4>
+                    <p>The El'molo Crocodile Park and backpackers club is an animal and nature park, located on the shores of Lake Victoria, At Uhanya Beach, Yimbo, Siaya County. We offer you're a getaway facility for friends, family, groups and institutions. we offer several attractions like nile crocodiles, tortoise, geese, boat rides, fishing, camping. We have perfect facilities for campers and backpackers. See you soon.</p>
+                    <img src="images/crocodile-park.webp" alt="crocodile park" loading="lazy" width="300px" height="300px">
+                </div>
+            </section>
+        </section>
+        <section class="main-content">
+            <h2>Local Photos of Interest</h2>
+            <div class="image-gallery">
+                <div class="image" id="image1">
+                    <img src="images/DmS3LnbbOyqpxGEuZBTzR6J3NeSauFW5ugpBkNX2.webp" alt="cotton harvesting" loading="lazy">
+                    <p>Cotton Harvesting</p>
+                </div>
+                <div class="image" id="image2">
+                    <img src="images/elmolo-beach.webp" alt="elmolo beach" loading="lazy">
+                    <p>Elmolo Beach</p>
+                </div>
+                <div class="image" id="image3">
+                    <img src="images/images.webp" alt="cotton farm" loading="lazy">
+                    <p>Cotton Farm</p>
+                </div>
+                <div class="image" id="image4">
+                    <img src="images/images28929-1.webp" alt="Busia market" loading="lazy">
+                    <p>Busia Market</p>
+                </div>
+                <div class="image" id="image5">
+                    <img src="images/images281629-1.webp" alt="fish farming" loading="lazy">
+                    <p>Fish Farming</p>
+                </div>
+                <div class="image" id="image6">
+                    <img src="images/oxshibi8sjmxytm0ib5d2f7672bd142.webp" alt="fish market" loading="lazy">
+                    <p>Fish Market</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-and-info">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.webp" alt="web master Logo" loading="lazy" width="150px" height="150px">
+            </a>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="development-info">
+            <p>&copy; <span id="currentYear"></span> David Kamau Hinga, Kenya</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

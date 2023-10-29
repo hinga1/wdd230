@@ -70,3 +70,13 @@ darkModeToggle.addEventListener("change", () => {
     }
 });
 
+if (localStorage.getItem("visitCount")) {
+    var count = parseInt(localStorage.getItem("visitCount"));
+    count++;
+    localStorage.setItem("visitCount", count);
+  } else {
+    localStorage.setItem("visitCount", 1);
+  }
+document.getElementById("visitCount").innerHTML = localStorage.getItem("visitCount");
+  
+
