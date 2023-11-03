@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Pacifico&family=Roboto:wght@300&display=swap');
+
+:root {
+    --form-background: #f2f2f2;
+    --form-text: #333;
+    --form-border: #ccc;
+}
+
+body {
+    font-family: Pacifico;
+}
+
+h1 {
+    font-family: roboto;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.grid-item {
+    font-family: roboto;
+}
+
+header {
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 20px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    padding: 20px;
+  }
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* Style for vertical lines before and after navigation links */
+nav a:hover::before,
+nav a:hover::after {
+    content: "|"; /* Use the vertical bar as content on hover */
+}
+
+.name-form {
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    background: var(--form-background);
+    padding: 20px;
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--form-text);
+}
+
+input, output {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--form-border);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+    margin-top: 15px;
+}
