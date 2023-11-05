@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busia Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta name="author" content="David Kamau Hinga">
+    <meta name="description" content="Chamber of Commerce Site Plan">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Busia Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Z7SttK88F1zJKTu69uHwvwo7dqLKTjqU_Q&usqp=CAU">
+    <meta property="og:url" content="https://hinga1.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="web master Logo" width="150px" height="150px">
+        </a>
+        <div>
+            <h1>Busia Town Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Membership Application Form</h2>
+            <form action="thankyou.html" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="position">Title/Position (min 7 characters, only letters, hyphens, and spaces):</label>
+                <input type="text" id="position" name="position" required pattern="[A-Za-z\s-]{7,}">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">Non Profit (No Fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+        <section class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <!-- Include information about each membership level and its benefits -->
+            <p><strong>Non Profit (NP):</strong> No fee, basic benefits.</p>
+            <p><strong>Bronze Membership:</strong> Increased benefits.</p>
+            <p><strong>Silver Membership:</strong> More benefits.</p>
+            <p><strong>Gold Membership:</strong> Highest benefits.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="logo-and-info">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.webp" alt="web master Logo" width="150px" height="150px">
+            </a>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="development-info">
+            <p>&copy; <span id="currentYear"></span> David Kamau Hinga, Kenya</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
