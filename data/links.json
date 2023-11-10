@@ -1,0 +1,75 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          { "url": "lesson01/index.html", "title": "Introduction to HTML" },
+          { "url": "lesson01/assignment.html", "title": "HTML Assignment" }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          { "url": "lesson02/mediaquery.html", "title": "Media Queries" },
+          { "url": "lesson02/design-principles.html", "title": "Design Principles Document" }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          { "url": "lesson03/javascript-basics.html", "title": "JavaScript Basics" },
+          { "url": "lesson03/chamber-site-plan.html", "title": "Chamber Site Plan" }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          { "url": "lesson04/css-layout.html", "title": "CSS Layout" },
+          { "url": "lesson04/advanced-selectors.html", "title": "Advanced Selectors" }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          { "url": "lesson05/css-flexbox.html", "title": "CSS Flexbox" },
+          { "url": "lesson05/css-grid.html", "title": "CSS Grid" }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          { "url": "lesson06/form-elements.html", "title": "HTML Form Elements" },
+          { "url": "lesson06/css-transitions-animations.html", "title": "CSS Transitions and Animations" }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          { "url": "lesson07/intro-to-jquery.html", "title": "Introduction to jQuery" },
+          { "url": "lesson07/using-jquery.html", "title": "Using jQuery" }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          { "url": "lesson08/ajax-json.html", "title": "AJAX and JSON" },
+          { "url": "lesson08/svg.html", "title": "Scalable Vector Graphics (SVG)" }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          { "url": "lesson09/building-apis.html", "title": "Building APIs" },
+          { "url": "lesson09/using-apis.html", "title": "Using APIs" }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          { "url": "lesson10/progressive-web-apps.html", "title": "Progressive Web Apps" },
+          { "url": "lesson10/service-workers.html", "title": "Service Workers" }
+        ]
+      }
+    ]
+  }
+  
