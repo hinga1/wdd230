@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta name="author" content="David Kamau Hinga">
+    <meta name="description" content="Directory Chamber of Commerce">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Directory Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Z7SttK88F1zJKTu69uHwvwo7dqLKTjqU_Q&usqp=CAU">
+    <meta property="og:url" content="https://hinga1.github.io/wdd230/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="web master Logo" width="150px" height="150px">
+        </a>
+        <div>
+            <h1>Busia Town Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+
+    </header>
+    
+    <main>
+        <section class="view-toggle">
+            <label for="gridView">Grid View</label>
+            <input type="radio" name="viewToggle" id="gridView" checked>
+            <label for="listView">List View</label>
+            <input type="radio" name="viewToggle" id="listView">
+        </section>
+
+        <section id="membersContainer" class="grid-view">
+            
+        </section>
+    </main>
+    
+    <footer>
+        <div class="logo-and-info">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.webp" alt="web master Logo" width="150px" height="150px">
+            </a>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lesson03/chamber-site-plan.html">Site plan</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="development-info">
+            <p>&copy; <span id="currentYear"></span> David Kamau Hinga, Kenya</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/scripts.js" defer></script>
+    <script src="data/members.json" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>

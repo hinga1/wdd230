@@ -32,4 +32,24 @@
     .nav-links li {
         margin: 10px;
     }
+
+/* Style for grid view */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Style for list view */
+.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-card {
+    /* Add your styles for the individual member cards here */
+    margin-bottom: 20px;
+}
+
+
 }
