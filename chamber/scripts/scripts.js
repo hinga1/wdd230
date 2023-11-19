@@ -20,6 +20,27 @@ document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 document.getElementById("lastModified").innerHTML = "Last modified: " + document.lastModified;
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Existing code...
+
+    // Fetch and display weather data
+    fetchWeather();
+
+    // Check if it's Monday, Tuesday, or Wednesday
+    const today = new Date().getDay();
+    if (today >= 1 && today <= 3) {
+        // Show the meet and greet banner
+        const bannerContainer = document.getElementById("meetGreetBanner");
+        bannerContainer.style.display = "block";
+
+        // Close banner functionality
+        const closeButton = document.getElementById("closeBannerButton");
+        closeButton.addEventListener("click", function () {
+            bannerContainer.style.display = "none";
+        });
+    }
+});
+
 function fetchWeather() {
     const apiKey = 'f97ad2c131d55d683e196f22701a1cee'; 
     const location = 'Busia, Kenya'; 
@@ -40,6 +61,37 @@ function fetchWeather() {
         .catch(error => {
             console.error('Error fetching weather data:', error);
         });
+
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=metric`)
+        .then(response => response.json())
+        .then(forecastData => {
+            // Display forecast data
+            const forecastContainer = document.getElementById('forecast');
+
+            // Clear previous forecast content
+            forecastContainer.innerHTML = '';
+
+            // Loop through the next three days and display the forecast
+            for (let i = 1; i <= 3; i++) {
+                const forecastDay = forecastData.daily[i];
+                const forecastItem = document.createElement('div');
+                forecastItem.classList.add('forecast-item');
+
+                // Customize the HTML structure based on your needs
+                forecastItem.innerHTML = `
+                    <p><strong>Day ${i}:</strong></p>
+                    <p>Temperature: ${forecastDay.temp.day}°C</p>
+                    <p>Condition: ${forecastDay.weather[0].description}</p>
+                `;
+
+                // Append the forecast item to the container
+                forecastContainer.appendChild(forecastItem);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching forecast data:', error);
+        });
+
 }
 
 fetchWeather();

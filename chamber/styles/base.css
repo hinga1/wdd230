@@ -547,6 +547,38 @@ footer {
     padding: 10px;
 }
 
+/* Add this style to your existing CSS */
+.banner-container {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#closeBannerButton {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Add this style to hide the banner on other days */
+body:not(.show-banner) .banner-container {
+    display: none;
+}
+
+
 /* Media Query for Mobile Screens */
 @media screen and (max-width: 768px) {
     .menu-toggle {
